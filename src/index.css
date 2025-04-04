@@ -1,0 +1,21 @@
+.game{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #888;
+  width: 10%;
+  height: 150%;  
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 4em;
+  font-style: bold;
+  font-weight: 900;
+  cursor: pointer;
+}
