@@ -9,7 +9,7 @@ const App = () => {
     <>
       <div className="game">
         <h1>TicTacToe Game</h1>
-        <button>Reset</button>
+        <button className="resetButton">Reset</button>
         <div className="board">
           {board.map((_, index) => {
             return (
