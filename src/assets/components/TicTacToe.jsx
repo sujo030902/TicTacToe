@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import useTicTacToe from "../../hooks/useTicTacToe";
 
 
 
 const TicTacToe = () => {
 
-
+    const {board} = useTicTacToe();
   return (
     <>
       <div className="game">

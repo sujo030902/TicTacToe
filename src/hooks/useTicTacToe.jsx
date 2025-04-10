@@ -17,4 +17,6 @@ const useTicTacToe = ()=>{
     const resetGame = () => {}
 
     return {board, calculateWinner, handleClick, getStatusMessage, resetGame}
-}
+};
+
+export default useTicTacToe; 
