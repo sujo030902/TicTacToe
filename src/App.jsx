@@ -1,12 +1,27 @@
-import React from 'react'
-import Board from './assets/components/Board'
+import React, { useState } from "react";
+
+const initialValue = () => Array(9).fill(null);
 
 const App = () => {
+  const [board, setboard] = useState(initialValue());
+
   return (
     <>
-    <Board />
+      <div className="game">
+        <h1>TicTacToe Game</h1>
+        <button>Reset</button>
+        <div className="board">
+          {board.map((_, index) => {
+            return (
+              <button className="cell" key={index}>
+                X
+              </button>
+            );
+          })}
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
