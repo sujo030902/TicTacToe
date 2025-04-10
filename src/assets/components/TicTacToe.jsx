@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-const initialValue = () => Array(9).fill(null);
+
 
 const TicTacToe = () => {
-  const [board, setboard] = useState(initialValue());
+
 
   return (
     <>
