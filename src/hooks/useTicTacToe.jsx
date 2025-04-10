@@ -10,7 +10,7 @@ const useTicTacToe = ()=>{
     
     const calculateWinner = () => {}
 
-    const handleClick = () => {}
+    const handleClick = (index) => {}
 
     const getStatusMessage = () => {}
 
