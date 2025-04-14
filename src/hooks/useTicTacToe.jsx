@@ -19,7 +19,13 @@ const useTicTacToe = ()=>{
     }
 
     const handleClick = (index) => {
-        
+        if(board[index] || calculateWinner()){
+            const newBoard = [...board];
+            newBoard[index] = isNext ? "X" : "O";
+            setboard(newBoard);
+            setisNext(!isNext); 
+        }
+
     }
 
     const getStatusMessage = () => {}
