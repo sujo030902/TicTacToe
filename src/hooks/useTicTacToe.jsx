@@ -23,12 +23,12 @@ const useTicTacToe = () => {
   };
 
   const handleClick = (index) => {
-    if (board[index] || calculateWinner()) return; // Prevent click if cell already filled or game over
+    if (board[index] || calculateWinner()) return; 
 
     const newBoard = [...board];
     newBoard[index] = isNext ? "X" : "O";
     setBoard(newBoard);
-    setIsNext(!isNext); // Switch player
+    setIsNext(!isNext); 
   };
 
   const getStatusMessage = () => {
